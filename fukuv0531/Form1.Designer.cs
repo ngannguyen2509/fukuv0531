@@ -47,7 +47,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(346, 85);
+            button1.Location = new Point(467, 90);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(346, 175);
+            button2.Location = new Point(478, 177);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 2;
@@ -67,6 +67,7 @@
             // 
             // timer1
             // 
+            timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
             // Form1

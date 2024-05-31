@@ -8,24 +8,25 @@ namespace fukuv0531
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            vy += 15;
-
-        }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            vy -= 15;
-        }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            label1.Top = vy;
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
             timer1.Enabled = false;
             label1.Text = "ngan";
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            vy = 15;
+
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            vy = -15;
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Top += vy;
+        }
+
+
     }
 }
